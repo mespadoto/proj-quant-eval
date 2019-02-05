@@ -3,8 +3,10 @@
 - Concatenation of results files
 
 ```
-bash 01_concat_results.sh <OUTPUT_FOLDER>, where OUTPUT_FOLDER is the folder containing *pq*.csv files from the experiment.
+bash 01_concat_results.sh <OUTPUT_FOLDER>
 ```
+
+where OUTPUT_FOLDER is the folder containing *pq*.csv files from the experiment.
 
 - Data consolidation
 
