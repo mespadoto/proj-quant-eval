@@ -1,0 +1,6 @@
+#!/bin/bash
+
+base_dir=$(dirname "$0")
+cd $base_dir
+java -Xms768m -Xmx768m -Djava.library.path=$base_dir/dlls -Djava.library.path=$base_dir/components -cp $base_dir/VisPipeline.jar vispipeline.util.CmdLine $@
+cd - >/dev/null 2>&1
