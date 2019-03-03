@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      Experiment - A Quantitative Survey of Multidimensional Projection Techniques
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.loli.net/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           A Quantitative Survey of Multidimensional Projection Techniques
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">Mateus Espadoto, Rafael M. Martins, Andreas Kerren, Nina S. T. Hirata and Alexandru C. Telea</h2>
+	</div>
+
+	<div class="nav">
+	
+		
+      <a class="nav- " role="presentation" href="/post/datasets">Datasets</a>
+		
+      <a class="nav- " role="presentation" href="/post/experiment">Experiment</a>
+		
+      <a class="nav- " role="presentation" href="/post/measurements">Measurements</a>
+		
+      <a class="nav- " role="presentation" href="/post/projections">Projections</a>
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      <h3 class="post-title">Experiment</h3>
+      
+    </header>
+    <section class="post-content">
+      
+
+<h4 id="pipeline-of-the-experiment">Pipeline of the experiment:</h4>
+
+<p><img src="/img/pipeline.png" width="700"/></p>
+
+<h4 id="how-to-run-the-experiment">How to run the experiment:</h4>
+
+<ul>
+<li><p>Get the <a href="https://github.com/mespadoto/proj-quant-eval/tree/master/code/01_data_collection">code</a></p></li>
+
+<li><p>Setup:</p></li>
+
+<li><p>Install Java 8</p></li>
+
+<li><p>Install Octave 4.x</p></li>
+
+<li><p>Install Anaconda for Python 3.6</p></li>
+
+<li><p>Install python packages:</p></li>
+</ul>
+
+<pre><code>pip install umap-learn wget keras numpy pandas scikit-learn
+conda install -c conda-forge shogun
+
+git clone https://github.com/DmitryUlyanov/Multicore-TSNE.git
+cd Multicore-TSNE/
+pip install .
+</code></pre>
+
+<ul>
+<li>Sanity check:</li>
+</ul>
+
+<pre><code>python test_wrappers.py
+python test_projections.py
+</code></pre>
+
+<ul>
+<li>Getting the datasets (it will take some time. About 20 GB of disk space will be used):</li>
+</ul>
+
+<pre><code>python get_datasets.py
+</code></pre>
+
+<ul>
+<li>Viewing all datasets available:</li>
+</ul>
+
+<pre><code>python runner.py
+</code></pre>
+
+<ul>
+<li>Running the projections:</li>
+</ul>
+
+<pre><code>python runner.py [-d dataset name] [-k neighbors] [-o output_dir]
+</code></pre>
+
+<ul>
+<li>Adding new projections: see projections.py</li>
+<li>Addind new metrics: see metrics.py</li>
+</ul>
+
+<h4 id="how-to-consolidate-the-results">How to consolidate the results:</h4>
+
+<ul>
+<li><p>Get the <a href="https://github.com/mespadoto/proj-quant-eval/tree/master/code/02_results">code</a></p></li>
+
+<li><p>Concatenation of results files</p></li>
+</ul>
+
+<pre><code>bash 01_concat_results.sh &lt;OUTPUT_FOLDER&gt;
+</code></pre>
+
+<p>where OUTPUT_FOLDER is the folder containing *pq*.csv files from the experiment.</p>
+
+<ul>
+<li>Data consolidation</li>
+</ul>
+
+<pre><code>python 02_consolidate.py
+</code></pre>
+
+<ul>
+<li>Generating heatmaps:</li>
+</ul>
+
+<pre><code>python heatmap2.py
+</code></pre>
+
+<ul>
+<li>Generating Shepard diagrams</li>
+</ul>
+
+<pre><code>python shepard.py
+</code></pre>
+
+<ul>
+<li>Running the time evaluation:</li>
+</ul>
+
+<pre><code>python time_eval.py
+</code></pre>
+
+<ul>
+<li>Generating time evaluation plots:</li>
+</ul>
+
+<pre><code>python time_eval_plot.py
+</code></pre>
+
+    </section>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  
+  
+  
+  <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IVAPP 2019: Visual Analytics of Multidimensional Projections for Constructing Classifier Decision Boundary Maps</title>
+    <link>https://example.org/</link>
+    <description>Recent content on IVAPP 2019: Visual Analytics of Multidimensional Projections for Constructing Classifier Decision Boundary Maps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 27 Sep 2018 22:15:05 -0300</lastBuildDate>
+    
+	<atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FashionMNIST</title>
+      <link>https://example.org/post/fashionmnist/</link>
+      <pubDate>Thu, 27 Sep 2018 22:15:05 -0300</pubDate>
+      
+      <guid>https://example.org/post/fashionmnist/</guid>
+      <description> Fashion MNIST Experiments </description>
+    </item>
+    
+    <item>
+      <title>MNIST</title>
+      <link>https://example.org/post/mnist/</link>
+      <pubDate>Thu, 27 Sep 2018 22:15:04 -0300</pubDate>
+      
+      <guid>https://example.org/post/mnist/</guid>
+      <description> MNIST Experiments </description>
+    </item>
+    
+    <item>
+      <title>CIFAR10</title>
+      <link>https://example.org/post/cifar10/</link>
+      <pubDate>Thu, 27 Sep 2018 22:15:03 -0300</pubDate>
+      
+      <guid>https://example.org/post/cifar10/</guid>
+      <description> CIFAR10 Experiments </description>
+    </item>
+    
+    <item>
+      <title>ImageNet</title>
+      <link>https://example.org/post/imagenet/</link>
+      <pubDate>Thu, 27 Sep 2018 22:15:02 -0300</pubDate>
+      
+      <guid>https://example.org/post/imagenet/</guid>
+      <description> ImageNet Experiments </description>
+    </item>
+    
+  </channel>
+</rss>

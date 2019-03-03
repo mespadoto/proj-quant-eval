@@ -246,9 +246,9 @@ unsort_key['VQ'] = 'VQ'
 
 
 df = pd.read_csv('full.csv')
-df_rerun = pd.read_csv('full_rerun.csv')
-df_svhn = pd.read_csv('full_svhn.csv')
-df = pd.concat([df, df_rerun, df_svhn]).reset_index(drop=True)
+# df_rerun = pd.read_csv('full_rerun.csv')
+# df_svhn = pd.read_csv('full_svhn.csv')
+# df = pd.concat([df, df_rerun, df_svhn]).reset_index(drop=True)
 
 df['params'] = df['projection_parameters'].copy(deep=True)
 

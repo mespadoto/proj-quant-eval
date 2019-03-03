@@ -55,6 +55,9 @@ def save_dataset(name, X, y):
     np.save(os.path.join(dir_name, 'X.npy'), X)
     np.save(os.path.join(dir_name, 'y.npy'), y)
 
+    np.savetxt(os.path.join(dir_name, 'X.csv.gz'), X, delimiter=',')
+    np.savetxt(os.path.join(dir_name, 'y.csv.gz'), y, delimiter=',')
+
 
 def remove_all_datasets(base_dir):
     if os.path.exists(base_dir):
