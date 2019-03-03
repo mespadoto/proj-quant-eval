@@ -1,9 +1,10 @@
-#baseurl = "https://mespadoto.github.io/"
+baseurl = "https://mespadoto.github.io/proj-quant-eval/"
 title = "A Quantitative Survey of Multidimensional Projection Techniques"
 author = "M. Espadoto"
 paginate = 4
 theme = "arabica"
 publishDir = "../docs"
+relativeURLS = true
 
 [params]
     description = "Mateus Espadoto, Rafael M. Martins, Andreas Kerren, Nina S. T. Hirata and Alexandru C. Telea"
