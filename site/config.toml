@@ -1,4 +1,4 @@
-baseurl = "https://mespadoto.github.io/proj-quant-eval/"
+#baseurl = "https://mespadoto.github.io/"
 title = "A Quantitative Survey of Multidimensional Projection Techniques"
 author = "M. Espadoto"
 paginate = 4
