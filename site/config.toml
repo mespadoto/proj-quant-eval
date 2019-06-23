@@ -1,5 +1,5 @@
 baseurl = "https://mespadoto.github.io/proj-quant-eval/"
-title = "A Quantitative Survey of Multidimensional Projection Techniques"
+title = "Towards A Quantitative Survey of Dimension Reduction Techniques"
 author = "M. Espadoto"
 paginate = 4
 theme = "arabica"

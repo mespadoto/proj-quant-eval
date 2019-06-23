@@ -6,5 +6,8 @@ draft: false
 # next: "/post/projections/"
 ---
 
-##### To be updated soon
-<!-- <img src="/dbm/img/densemaps_02class_LogisticRegression.png" width="1200"/> -->
+##### Metric data
+
+- Data for Dataset-wise view (Figure 2) [xlsx](/raw/fig2.xlsx) [odf](/raw/fig2.ods)
+- Data for Projection-wise view (Figure 3) [xlsx](/raw/fig3.xlsx) [odf](/raw/fig3.ods)
+- All metrics for best runs [xlsx](/raw/param_best_all_metrics.xlsx) [odf](/raw/param_best_all_metrics.ods)
