@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A Quantitative Survey of Multidimensional Projection Techniques</title>
+    <title>Towards A Quantitative Survey of Dimension Reduction Techniques</title>
     <link>https://mespadoto.github.io/proj-quant-eval/</link>
-    <description>Recent content on A Quantitative Survey of Multidimensional Projection Techniques</description>
+    <description>Recent content on Towards A Quantitative Survey of Dimension Reduction Techniques</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 27 Sep 2018 22:15:05 -0300</lastBuildDate>
     
@@ -41,7 +41,7 @@ Individual datasets    Dataset Data (csv) Labels (csv) Data (numpy) Labels (nump
       <pubDate>Thu, 27 Sep 2018 22:15:03 -0300</pubDate>
       
       <guid>https://mespadoto.github.io/proj-quant-eval/post/measurements/</guid>
-      <description> Metric data  Data for Figure 2 xlsx odf Data for Figure 3 xlsx odf All metrics for best runs (Figure 2) xlsx odf  </description>
+      <description> Metric data  Data for Dataset-wise view (Figure 2) xlsx odf Data for Projection-wise view (Figure 3) xlsx odf All metrics for best runs xlsx odf  </description>
     </item>
     
     <item>
