@@ -306,14 +306,13 @@ def metric_pq_continuity_k_11(id_run):
     return metric_continuity(11, id_run)
 
 
-# FIXME: returning unbounded values. Check definitions on "Modern Multidimensional Scaling: Theory and Applications"
 def metric_pq_normalized_stress(id_run):
     global DISTANCES
 
     D_high = np.load(DISTANCES['D_high_list'], mmap_mode='c')
     D_low = np.load(DISTANCES[id_run]['D_low_list'], mmap_mode='c')
 
-    return np.sum((D_high - D_low)**2) / np.sum(D_high**2) / 100
+    return np.sum((D_high - D_low)**2) / np.sum(D_high**2)
 
 
 def metric_pq_shepard_diagram_correlation(id_run, dataset_name):
