@@ -427,8 +427,8 @@ def process_orl():
         for j in range(10):
             tmp = io.imread(dir_name + '/%d.pgm' % (j + 1))
             tmp = transform.resize(tmp, (img_h, img_w), preserve_range=True)
-            X[i] = tmp / 255.0
-            y[i] = label
+            X[10 * i + j] = tmp / 255.0
+            y[10 * i + j] = label
 
     save_dataset('orl', X.reshape((-1, img_h * img_w)), y)
 
